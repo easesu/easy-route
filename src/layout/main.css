@@ -1,0 +1,33 @@
+.mainLayout {
+  display: flex;
+  height: 100%;
+}
+
+.mainLayoutSide {
+  flex: 0 0 20%;
+  max-width: 300px;
+  padding: 24px 0;
+  border-right: 1px solid #ddd;
+}
+
+.mainLayoutSideItem {
+  display: block;
+  padding: 16px 24px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #212121;
+  cursor: pointer;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &.isHighlight {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+}
+
+.mainLayoutBody {
+  flex: 1 1 auto;
+  padding: 24px;
+}
